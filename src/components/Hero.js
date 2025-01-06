@@ -2,6 +2,9 @@
 
 import { useContext } from "react";
 
+// translation
+import { useTranslations } from "next-intl";
+
 // components 
 import Search from "./Search";
 
@@ -17,8 +20,11 @@ import { motion, easeInOut } from "framer-motion";
 // variants
 import { fadeIn } from "/variants";
 
+import  LanguageToggle  from "./LanguageToggle";
+
 export default function Hero() {
   const { searchActive } = useContext(SearchContext);
+  const t = useTranslations("Hero");
 
   return (
     <section className="h-screen xl:h-[90vh] bg-[#b2b7c2]/10" id="home">
@@ -34,8 +40,8 @@ export default function Hero() {
               viewport={{ once: false, amount: 0.6}}
               className="h1"
             >
-              Explore the Finest <span className="text-accent">Global</span>{" "}
-              Offers
+              {t("title")} <span className="text-accent">{t("title-featured")}</span>{" "}
+              {t("title-continuation")}
             </motion.h1>
             <motion.p
               variants={fadeIn("down", 0.4)}
@@ -44,7 +50,7 @@ export default function Hero() {
               viewport={{ once: false, amount: 0.6}}            
               className="description max-w-[550px] mx-auto xl:mx-0 mb-6 xl:mb-10"
             >
-              Find your ideal ride for any adventure with our diverse range of affordable and dependable car rentals.
+              {t("paragraph")}
             </motion.p>
             {/* btns */}
             <motion.div
@@ -60,7 +66,7 @@ export default function Hero() {
                   src={"/icons/buttons/app-store.svg"}
                   width={132}
                   height={36}
-                  alt=""
+                  alt={t("button-app-store")}
                 />
               </button>
               {/* btn google */}
@@ -69,7 +75,7 @@ export default function Hero() {
                   src={"/icons/buttons/google-play.svg"}
                   width={132}
                   height={36}
-                  alt=""
+                  alt={t("button-google-play")}
                 />
               </button>
             </motion.div>
@@ -85,7 +91,7 @@ export default function Hero() {
             <Image
               src={"/images/hero/car.svg"}
               fill
-              alt=""
+              alt={t("image-car")}
               style={{ objectFit: "contain" }}
               priority
             />

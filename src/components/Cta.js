@@ -3,6 +3,8 @@
 // next image
 import Image from "next/image";
 
+import { useTranslations } from "next-intl";
+
 // motion
 import { motion } from "framer-motion";
 
@@ -10,6 +12,8 @@ import { motion } from "framer-motion";
 import { fadeIn } from "/variants";
 
 export default function Cta() {
+  const t = useTranslations("Cta");
+
   return (
     <section 
       className="pt-24 xl:pt-48 flex items-end pb-0 bg-[#b2b7c2]/10 overflow-hidden" 
@@ -27,7 +31,7 @@ export default function Cta() {
                 viewport={{ once: false, amount: 0.6 }}
                 className="h2"
               >
-                Download our App now and hit the road with ease
+                {t("title")}
               </motion.h2>
               <motion.p
                 variants={fadeIn("right", 0.4)}
@@ -36,7 +40,7 @@ export default function Cta() {
                 viewport={{ once: false, amount: 0.6 }}
                 className="mb-10"
               >
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit quod eaque error nemo beatae, rerum quia laudantium harum distinctio temporibus. 
+                {t("paragraph")}
               </motion.p>
               {/* btns */}
               <motion.div

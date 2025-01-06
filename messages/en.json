@@ -1,0 +1,89 @@
+{
+    "Header": {
+        "logo": "Carland Rentals logo and a track with a red arrow",
+        "home": "Home",
+        "cars": "Cars",
+        "about": "About",
+        "why": "Why us",
+        "testimonial": "Testimonial",
+        "contact": "Contact",
+        "button-see-cars": "See cars"
+    },
+    "LanguageToggle": {
+        "english": "english",
+        "portuguese": "portuguese"
+    },
+    "Search": {
+        "button-search": "search"
+    },
+    "SearchMobile": {
+        "button-search": "search"
+    },
+    "LocationSelection": {
+        "icon-location": "location icon",
+        "select-location": "select location"
+    },
+    "DateSelection": {
+        "icon-calendar": "calendar icon",
+        "select-date": "select date"
+    },
+    "HoursSelection": {
+        "icon-clock": "clock icon",
+        "select-hour": "select hour"
+    },
+    "Hero": {
+        "title": "Explore the Finest",
+        "title-featured": "Global",
+        "title-continuation": "Offers",
+        "paragraph": "Find your ideal ride for any adventure with our diverse range of affordable and dependable car rentals.",
+        "button-app-store": "button to access the application in the app store",
+        "button-google-play": "button to access the application on Google Play",
+        "image-car": "image of a red car"
+    },
+    "CarSlider": {
+        "convertible": "convertible",
+        "day": "day",
+        "manual": "manual",
+        "seats": "seats",
+        "gas": "gas",
+        "hp": "hp",
+        "front": "front",
+        "see-details": "see details"
+    },
+    "About": {
+        "title": "Car services simplified",
+        "paragraph": "Rent, choose and repair width ease. Our convenient locations, diverse car types, and reliable repair, points ensure a seamless car experience.",
+        "car-types": "car \n types",
+        "rental-outlets": "rental \n outlets",
+        "repair-points": "repair \n points",
+        "button-see-cars": "see cars"
+    },
+    "Why": {
+        "title": "Unmatched excellence and customer satisfaction",
+        "paragraph": "Our dedication to providing exceptional services sets us apart from the competition. From the moment you engage with us, we strive to exceed your expectations in every interaction.",
+        "title-reason-1": "Rent simply and quicky",
+        "paragraph-reason-1": "We prioritize your need and we go above and beyond to ensure your experience with us is nothing short of outstanding.",
+        "title-reason-2": "Modern & well maintained vehicles",
+        "paragraph-reason-2": "We work with an exclusive selection of modern and impeccably maintained vehicles, ready to meet your needs with comfort, style and safety.",
+        "title-reason-3": "Prompt and flexible services",
+        "paragraph-reason-3": "At Carland, we understand that your time is precious. That’s why we offer fast, flexible services tailored to meet your needs."
+    },
+    "Cta": {
+        "title": "Download our App now and hit the road with ease",
+        "paragraph": "Download the CarLand app now and have your car in the palm of your hand! Manage everything with ease, from reservations and maintenance to exclusive services. Hit the road without any hassle!"
+    },
+    "Footer": {
+        "carland-description": "Carland Rentals specializes in vehicle rentals, whether for leisure or business, we ensure you have the best experience at every kilometer!",
+        "business-hours": "Business hours",
+        "mon-fri": "Mon-Fri",
+        "sat": "Sat",
+        "sun": "Sun",
+        "closed": "Closed",
+        "title-contact": "Contact",
+        "paragraph-contact":"Would you like more information about our services? Contact us",
+        "button-submit": "submit"
+    },
+    "Copyright": {
+        "rights": "All rights reserved"
+    }
+}

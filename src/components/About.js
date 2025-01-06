@@ -3,6 +3,8 @@
 // next image
 import Image from "next/image";
 
+import { useTranslations } from "next-intl";
+
 // icons
 import {
     MdOutlineMapsHomeWork,
@@ -26,6 +28,8 @@ const About = () => {
     const [ref, inView] = useInView({
         threshold: 0.5,
     });
+    
+    const t = useTranslations("About");
 
     return (
         <section className="section flex items-center" id="about" ref={ref}> 
@@ -48,7 +52,7 @@ const About = () => {
                         />
                     </motion.div>
                     {/* text & stats */}
-                    <div className="flex-1 flex items-center xl:justify-center">
+                    <div className="flex-1 flex items-center xl:justify-center ">
                         <div className="xl:max-w-[517px]">
                             <motion.h2 
                                 variants={fadeIn("up", 0.2)}
@@ -57,7 +61,7 @@ const About = () => {
                                 viewport={{ once: false, amount: 0.6}}
                                 className="h2"
                             >
-                                Car services simplified.
+                                {t("title")}
                             </motion.h2>
                             <motion.p 
                                 variants={fadeIn("up", 0.6)}
@@ -66,7 +70,7 @@ const About = () => {
                                 viewport={{ once: false, amount: 0.6}}
                                 className="mb-[42px] max-w-md"
                             >
-                                Rent, choose and repair width ease. Our convenient locations, diverse car types, and reliable repair, points ensure a seamless car experience.
+                                {t("paragraph")}
                             </motion.p>
                             {/* stats */}
                             <motion.div 
@@ -74,7 +78,7 @@ const About = () => {
                                 initial="hidden"
                                 whileInView={"show"}
                                 viewport={{ once: false, amount: 0.2}}
-                                className="flex items-center gap-x-8 mb-12"
+                                className="flex  mb-12 justify-evenly"
                             >
                                 {/* car types*/}
                                 <div className="flex flex-col w-[100px]">
@@ -85,8 +89,8 @@ const About = () => {
                                         ): null}
                                         +
                                     </div>
-                                    <div className="uppercase text-[13px] font-semibold text-secondary">
-                                        car <br/> types
+                                    <div className="uppercase text-[13px] font-semibold text-secondary whitespace-pre-line">
+                                        {t("car-types")}
                                     </div>
                                 </div>
                                 {/* rental outlets*/}
@@ -97,8 +101,8 @@ const About = () => {
                                             <CountUp start={0} end={135} duration={3} delay={1}/>
                                         ): null}
                                     </div>
-                                    <div className="uppercase text-[13px] font-semibold text-secondary">
-                                        rental <br/> outlets
+                                    <div className="uppercase text-[13px] font-semibold text-secondary whitespace-pre-line">
+                                        {t("rental-outlets")}
                                     </div>
                                 </div>
                                 {/* repair points*/}
@@ -109,8 +113,8 @@ const About = () => {
                                             <CountUp start={0} end={35} duration={3} delay={1}/>
                                         ): null}
                                     </div>
-                                    <div className="uppercase text-[13px] font-semibold text-secondary">
-                                        repair <br/> points
+                                    <div className="uppercase text-[13px] font-semibold text-secondary whitespace-pre-line">
+                                        {t("repair-points")}
                                     </div>
                                 </div>
                             </motion.div>
@@ -122,7 +126,7 @@ const About = () => {
                                 viewport={{ once: false, amount: 0.6}}
                                 className="hidden xl:block bg-accent hover:bg-accent-hover rounded-[10px] w-full h-16 uppercase font-medium text-white tracking-[2px] text-[13px] max-w-[184px]"
                             >
-                                See all cars
+                                {t("button-see-cars")}
                             </motion.button>
                         </div>
                     </div>

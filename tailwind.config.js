@@ -25,6 +25,10 @@ module.exports = {
           DEFAULT: '#ed1d24',
           hover: '#dd242a'
         },
+        iconAccent: {
+          DEFAULT: 'primary',
+          hover: 'white'
+        },
         body: '#dedede',
       },
       backgroundImage: {

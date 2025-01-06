@@ -2,6 +2,9 @@
 
 import React, { useState } from "react";
 
+// translation
+import { useTranslations, useLocale } from "next-intl";
+
 // headless ui
 import { Menu } from "@headlessui/react";
 
@@ -12,6 +15,8 @@ import { FaArrowRightLong } from "react-icons/fa6";
 // react date
 import { DateRange } from "react-date-range";
 import { format, addDays } from "date-fns";
+import { pt, enUS } from "date-fns/locale"
+
 
 // react date range css
 import "react-date-range/dist/styles.css";
@@ -19,6 +24,18 @@ import "react-date-range/dist/theme/default.css";
 
 
 export default function DateSelection() {
+  const t = useTranslations("DateSelection");
+  const locale = useLocale();
+  
+  // Mapear os locais do next-intl para os locais do date-fns
+  const dateFnsLocales = {
+    pt: pt,
+    en: enUS,
+  };
+
+  // Obter o local correto do date-fns
+  const dateFnsLocale = dateFnsLocales[locale] || enUS;
+
   const [date, setDate] = useState([
     {
       startDate: new Date(),
@@ -35,9 +52,9 @@ export default function DateSelection() {
         <Menu.Button className="dropdown-btn w-full h-full flex flex-col justify-center items-center xl:items-start xl:pl-8"> 
 
           <div className="flex flex-col xl:flex-row items-center xl:gap-x-2 gap-y-2 xl:gap-y-0">
-            <FaCalendarAlt className="text-accent" />          
+            <FaCalendarAlt className="text-accent" aria-label={t("icon-calendar")}/>          
             <div className=" text-[15px] uppercase font-bold">
-              Select Date
+              {t("select-date")}
             </div>
           </div>
             
@@ -57,6 +74,7 @@ export default function DateSelection() {
         {/* items */}
         <Menu.Items className="dropdown-menu shadow-lg absolute -top-96 xl:top-[90px] left-1/2 xl:left-0 z-50 transform -translate-x-1/2 xl:-translate-x-0 rounded-[10px] overflow-hidden">
           <DateRange
+            locale={dateFnsLocale}
             onChange={(item) => setDate([item.selection])}
             editableDateInputs={true}
             moveRangeOnFirstSelection={false}

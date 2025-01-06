@@ -1,0 +1,89 @@
+{
+    "Header": {
+        "logo": "logo da Carland Rentals, e uma pista com uma seta vermelha",
+        "home": "Início",
+        "cars": "Carros",
+        "about": "Sobre",
+        "why": "Porque nós",
+        "testimonial": "Depoimento",
+        "contact": "Contato",
+        "button-see-cars": "Ver carros"
+    },
+    "LanguageToggle": {
+        "english": "inglês",
+        "portuguese": "português"
+    },
+    "Search": {
+        "button-search": "pesquisar"
+    },
+    "SearchMobile": {
+        "button-search": "pesquisar"
+    },
+    "LocationSelection": {
+        "icon-location": "ícone de localização",
+        "select-location": "selecione o local"
+    },
+    "DateSelection": {
+        "icon-calendar": "ícone de calendário",
+        "select-date": "selecione a data"
+    },
+    "HoursSelection": {
+        "icon-clock": "ícone de relógio",
+        "select-hour": "selecione a hora"
+    },
+    "Hero": {
+        "title": "Explore as",
+        "title-featured": "Melhores",
+        "title-continuation": "Ofertas",
+        "paragraph": "Encontre o carro ideal para qualquer aventura com nossa ampla variedade de aluguéis de carros acessíveis e confiáveis.",
+        "button-app-store": "botão para acessar o aplicativo na app store",
+        "button-google-play": "botão para acessar o aplicativo na google play",
+        "image-car": "imagem de um carro vermelho"
+    },
+    "CarSlider": {
+        "convertible": "conversível",
+        "day": "dia",
+        "manual": "manual",
+        "seats": "assentos",
+        "gas": "gás",
+        "hp": "cv",
+        "front": "frontal",
+        "see-details": "ver detalhes"
+    },
+    "About": {
+        "title": "Serviços de automóveis simplificados",
+        "paragraph": "Alugue, escolha e conserte com facilidade. Nossos locais convenientes, diversos tipos de carros e pontos de reparo confiáveis ​​garantem uma experiência perfeita com o carro.",
+        "car-types": "tipos de carros",
+        "rental-outlets": "pontos de venda e aluguel",
+        "repair-points": "pontos de reparos",
+        "button-see-cars": "ver carros"
+    },
+    "Why": {
+        "title": "Excelência inigualável e satisfação do cliente",
+        "paragraph": "Nossa dedicação em fornecer serviços excepcionais nos diferencia da concorrência. A partir do momento em que você se envolve conosco, nos esforçamos para exceder suas expectativas em cada interação.",
+        "title-reason-1": "Alugue de forma simples e rápida",
+        "paragraph-reason-1": "Priorizamos sua necessidade e fazemos de tudo para garantir que sua experiência conosco seja nada menos que excelente",
+        "title-reason-2": "Veículos modernos e bem conservados",
+        "paragraph-reason-2": "Trabalhamos com uma seleção exclusiva de veículos modernos e impecavelmente conservados, prontos para atender suas necessidades com conforto, estilo e segurança.",
+        "title-reason-3": "Serviços rápidos e flexíveis",
+        "paragraph-reason-3": "Na Carland, entendemos que seu tempo é precioso. Por isso, oferecemos serviços rápidos e flexíveis, sob medida para atender suas necessidades."
+    },
+    "Cta": {
+        "title": "Baixe nosso aplicativo agora e pegue a estrada com facilidade",
+        "paragraph": "Baixe agora o aplicativo da CarLand e tenha o seu carro na palma da mão! Gerencie tudo com facilidade, desde reservas e manutenção até serviços exclusivos. Pegue a estrada sem complicações!"
+    },
+    "Footer": {
+        "carland-description": "A Carland Rentals é especializada em aluguel de veículos, seja para lazer ou negócios, garantimos que você tenha a melhor experiência em cada quilômetro!",
+        "business-hours": "Horário de funcionamento",
+        "mon-fri": "Seg-Sex",
+        "sat": "Sáb",
+        "sun": "Dom",
+        "closed": "Fechado",
+        "title-contact": "Contato",
+        "paragraph-contact":"Gostaria de obter mais informações sobre nossos serviços? Entre em contato conosco",
+        "button-submit": "enviar"
+    },
+    "Copyright": {
+        "rights": "Todos os direitos reservados"
+    }
+}

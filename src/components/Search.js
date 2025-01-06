@@ -4,13 +4,18 @@
 import { useContext } from "react";
 import { SearchContext } from "../context/search";
 
+// translation
+import { useTranslations } from "next-intl";
+
 // components
 import LocationSelection from "./LocationSelection";
 import DateSelection from "./DateSelection";
-import HoursSelection from "./HoursSelection";
+import HourSelection from "./HourSelection";
 
 export default function Search() {
   const { searchActive } = useContext(SearchContext);
+  const t = useTranslations("Search");
+
   return (
     <div
       className={`
@@ -25,7 +30,7 @@ export default function Search() {
       <div className={`flex h-full ${searchActive && "container mx-auto"}`}>
         <LocationSelection/>
         <DateSelection/>
-        <HoursSelection /> 
+        <HourSelection /> 
         {/* btn */}
         <div className="xl:h:full flex items-center px-6 xl:px-0">
           <button
@@ -35,7 +40,7 @@ export default function Search() {
                 : "btn btn-lg btn-accent xl:w-[184px]"
             }`}
           >
-            Search
+            {t("button-search")}
           </button>
         </div>
       </div>

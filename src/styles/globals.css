@@ -56,7 +56,7 @@
   .btn {
     @apply rounded-[10px] w-full uppercase font-medium 
     text-white tracking-[2px] text-[13px] flex justify-center
-    items-center transition-all duration-300; 
+    items-center transition-all duration-300 cursor-pointer; 
   }
   .btn-sm {
     @apply h-14;
@@ -79,5 +79,19 @@
   }
   .active {
     @apply text-accent;
+  }
+  .icon-accent {
+    @apply text-iconAccent hover:text-iconAccent-hover transition-all duration-500;
+  }
+  .btn-language {
+    @apply 
+    items-center py-1 px-2 rounded-md border-2 font-semibold
+    bg-primary
+    text-white 
+    border-primary
+    hover:bg-transparent
+    hover:text-primary
+    transition-all 
+    duration-500; 
   }
 }

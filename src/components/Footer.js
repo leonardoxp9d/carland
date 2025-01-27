@@ -85,12 +85,12 @@ export default function Footer() {
                 {/* phone */}
                 <div className="flex items-center gap-x-[10px]">
                   <FaPhone/>
-                  <div className="font-medium">(21) 96869-5409</div>
+                  <div className="font-medium">+55 (21) 96869-5409</div>
                 </div>
                 {/* email */}
                 <div className="flex items-center gap-x-[10px]">
                   <FaEnvelope />
-                  <div className="font-medium">office@carland.com</div>
+                  <div className="font-medium">leonardo.sl.dev@gmail.com</div>
                 </div> 
               </div>
 
@@ -105,9 +105,7 @@ export default function Footer() {
                   {t("button-submit")}
                 </button>
               </form>
-
             </div>
-            
           </div>
         </motion.div>
       </div>      

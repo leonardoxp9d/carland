@@ -50,7 +50,7 @@ export default function HourSelection() {
               <Menu.Item key={index}>
                 <div
                   onClick={() => setHour(hour)}
-                  className="cursor-pointer py-4 text-center hover:bg-gray-50" 
+                  className="cursor-pointer py-4 text-center hover:bg-gray-200" 
                 >
                   {hour}
                 </div>
